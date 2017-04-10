@@ -507,6 +507,17 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+
+    $('#web-development').on('hidden.bs.modal', function() {
+        var thismodal = document.getElementById('web-development');
+        var iframes = thismodal.getElementsByTagName("iframe");
+        if (iframes != null) {
+            for (var i = 0; i < iframes.length; i++) {
+                iframes[i].src = iframes[i].src;
+            }
+        }
+    });
+
     </script>
 
 </body>
