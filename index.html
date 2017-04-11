@@ -142,7 +142,7 @@
                                 <h4>
                                     <strong>SMS marketing</strong>
                                 </h4>
-                                <p>SMS marketing using Mobile App.</p>
+                                <p>SMS marketing using Mobile Applications.</p>
                                 <button type="button" class="btn btn-light" data-toggle="modal" data-target="#sms-marketing">Learn More</button>
                             </div>
                         </div>
@@ -349,7 +349,7 @@
                 <h4 class="modal-title">Web Development</h4>
             </div>
             <div class="modal-body">
-                <p>We use Bootstrap to build your website stylish and professional. Bootstrap allows us to make responsive website</p>
+                <p>We use Bootstrap to build your website look stylish and professional. Bootstrap allows us to make responsive website</p>
                 <div class="video-wrapper">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/V7x_hosDoIo" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -366,10 +366,8 @@
                 <h4 class="modal-title">Web Hosting</h4>
             </div>
             <div class="modal-body">
-                <p>We host you website </p>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V7x_hosDoIo" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <p>We host your website in a <strong>cloud server</strong>. Why cloud server? Well, a cloud server is similar to normal webserver but it is quite flexible. Thanks to that we can give you <strong>better service</strong>. For example, we can do security update quickly and deploy an innovated software on your website.</p>
+                <p>We use <strong>Australian</strong> cloud server to take geographical advantages. Unlike other cloud server in other part of world, Australian based cloud provides a faster and reliable connections to Oz users. That means your website can have upto 5 times faster speed compare to other website.</p>
             </div>
         </div><!-- /modal-content -->
         </div><!-- /modal-dialog -->
@@ -383,7 +381,7 @@
                 <h4 class="modal-title">Web Maintance</h4>
             </div>
             <div class="modal-body">
-                <p>Web Maintance</p>
+                <p>Your website is important for your business, so it is important to keep up and running 24/7. But when it comes to maintanace, is a pain. So it would be a good idea to have someone who can look after your website. We maintain your website with no extra charge. Also we help you change images, icon or text on your existing website for free.</p>
             </div>
         </div><!-- /modal-content -->
         </div><!-- /modal-dialog -->
@@ -397,7 +395,7 @@
                 <h4 class="modal-title">SMS Marketing</h4>
             </div>
             <div class="modal-body">
-                <p>SMS Marketing</p>
+                <p>We are preparing for services such as SMS Marketing for small business.</p>
             </div>
         </div><!-- /modal-content -->
         </div><!-- /modal-dialog -->
@@ -508,6 +506,8 @@
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
 
+    /* When modal is hidden, youtube video should be stopped. This can be done
+       by reassigning src on youtube src */
     $('#web-development').on('hidden.bs.modal', function() {
         var thismodal = document.getElementById('web-development');
         var iframes = thismodal.getElementsByTagName("iframe");
