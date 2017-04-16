@@ -1,0 +1,11 @@
+1. Buy domain: https://hspc.web24.net.au/shop/en/#
+bizon.com.au or bizon.com 
+com.au requires you ABN or ACN number
+
+2. Goes to control panel
+forward email : Registration Activated for Web24 Pty Ltd Support Desk
+
+3. Login to Customer panel
+   and use tab "All My Domains", check Zone is active.
+   then add New Record
+   www.bizon.com.au  7200  A    111.67.16.87

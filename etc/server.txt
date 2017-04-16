@@ -1,0 +1,15 @@
+Maintance Note, 14-3-2017.
+This should be in /root of VPS
+
+1. Install Apache server
+   # apt-get install apache2
+   http://111.67.16.87 works
+2. Install postfix server
+   https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-16-04
+3. Install PHP 7.0
+   # apt-get install php
+   # apt-get install libapache2-mod-php
+4. Setup Apache name-based VirtualHost
+   https://httpd.apache.org/docs/2.4/en/vhosts/examples.html 
+   Edit /etc/apache2/sites-availables/000-default.conf
+   # /etc/init.d/apache2 restart
