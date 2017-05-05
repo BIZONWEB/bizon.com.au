@@ -9,3 +9,6 @@ forward email : Registration Activated for Web24 Pty Ltd Support Desk
    and use tab "All My Domains", check Zone is active.
    then add New Record
    www.bizon.com.au  7200  A    111.67.16.87
+
+4. Email account
+   Visit ZOHO Mail : https://www.zoho.com/mail/
