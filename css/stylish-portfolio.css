@@ -54,6 +54,10 @@ body {
     color: #004c84;
 }
 
+.main-blue-shadow {
+    text-shadow:2px 2px #004c84;
+}
+
 .sub-blue-color {
     color: #00b0bd;
 }
