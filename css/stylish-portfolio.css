@@ -43,6 +43,13 @@ body {
     font-weight: 700;
 }
 
+.text-vertical-center h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+
 .main-blue-color {
     color: #004c84;
 }
@@ -290,6 +297,27 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.kakaotalk-icon {
+    content: url(../img/kakaotalk.png)
+}
+
+.wechat-icon {
+    content: url(../img/wechat.png)
+}
+
+.line-icon {
+    content: url(../img/line.png)
+}
+
+.bizon-logo {
+    content: url(../img/bizon-logo.png)
 }
 
 #to-top {
