@@ -1,14 +1,24 @@
+Domain Name
+===========
 1. Buy domain: https://hspc.web24.net.au/shop/en/#
-bizon.com.au or bizon.com 
-com.au requires you ABN or ACN number
+   bizon.com.au or bizon.com 
+   com.au requires you ABN or ACN number
 
 2. Goes to control panel
-forward email : Registration Activated for Web24 Pty Ltd Support Desk
+   forward email : Registration Activated for Web24 Pty Ltd Support Desk
 
 3. Login to Customer panel
    and use tab "All My Domains", check Zone is active.
    then add New Record
    www.bizon.com.au  7200  A    111.67.16.87
 
-4. Email account
-   Visit ZOHO Mail : https://www.zoho.com/mail/
+Website
+=======
+1. A short phrase in 3 words, which describe your website the best.
+2. Come up with some keywords that your potential customer may use on google search to reach you.
+   Check your keyword with http://keywordtool.io/ and https://trends.google.com/trends/ to aline your keword to search trends.
+.
+
+Email Account
+=============
+1. Visit ZOHO Mail : https://www.zoho.com/mail/
