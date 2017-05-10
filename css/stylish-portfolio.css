@@ -155,6 +155,10 @@ hr.small {
     line-height: 55px;
 }
 
+.sidebar-nav > .sidebar-brand-focus {
+    background: #333;
+}
+
 .sidebar-nav > .sidebar-brand a {
     color: #999;
 }
