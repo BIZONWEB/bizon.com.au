@@ -61,7 +61,10 @@
                 <a href="#keywords" onclick=$("#menu-close").click();><i class="fa fa-search"></i>&nbsp; Keywords</a>
             </li>
             <li>
-                <a href="#SEO" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; SEO</a>
+                <a href="#seo" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; SEO</a>
+            </li>
+            <li>
+                <a href="#summary" onclick=$("#menu-close").click();><i class="fa fa-file-text"></i>&nbsp; Summary</a>
             </li>
         </ul>
     </nav>
@@ -71,7 +74,7 @@
         <div class="text-vertical-center">
             <h2 class="white-color">Get Started</h1>
             <br>
-            <h3 class="white-color">Web support for small business</h3>
+            <h3 class="white-color">Let's get started. But first things first, let's talk about what you want.<br>Run through below list and find out what you are going to do next.</h3>
         </div>
     </header>
 
@@ -103,7 +106,7 @@
         <!-- /.container -->
     </section>
 
-   <!-- Email account -->
+    <!-- Email account -->
     <section id="email-account" class="bg-default">
         <div class="container">
             <div class="row">
@@ -146,7 +149,7 @@
     </section>
 
     <!-- SEO -->
-    <section id="SEO" class="bg-info">
+    <section id="seo" class="bg-info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -159,6 +162,42 @@
         <!-- /.container -->
     </section>
 
+    <!-- Email me the summary -->
+    <section id="summary" class="bg-default">
+        <div class="container">
+            <div class="row text-center">
+                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#confirm-summary">Email me the summary</button>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Modal -->
+    <div id="confirm-summary" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Email me the summary</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="email">Your email : </label>
+                        <input type="email" class="form-control" placeholder="your-email@email.com">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">CC to <strong>support@bizon.com.au</strong></label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Confirm</button>
+                </div>
+            </div><!-- /modal-content -->
+        </div><!-- /modal-dialog -->
+    </div>
+ 
     <!-- Footer -->
     <footer>
         <div class="container">
