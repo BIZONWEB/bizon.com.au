@@ -89,9 +89,9 @@
                 <p class="lead">It is obvious that any website should be built for its' own business purpose. So your business type is a perfect
                     starting point. What type of business are you running?</p>
                 <div class="form-group">
-                    <label class="control-label col-sm-8" for="bussiness-type">Which describe the best of your business?</label>
+                    <label class="control-label col-sm-8" for="business-type">Which describe the best of your business?</label>
                     <div class="col-sm-4">
-                        <select id="bussiness-type">
+                        <select id="business-type">
                             <option>--Select--</option>
                             <option class="business-art">Art</option>
                             <option class="business-animal-pets">Animal &amp; Pets</option>
@@ -231,8 +231,8 @@
             <!-- /header -->
             <div class="row">
                 <p class="lead">In business, it is important to maintain a professional image for keeping your customers’ trust and appearing credibility to them.
-                    When potential or existing customers contact you with questions, using an email address like <em>sales@homecleaningservice.com.au</em>
-                    definitely looks professional than john8790@yahoo.com or johnsmith8790@gmail.com.
+                    When potential or existing customers contact you with questions, using an email address like <em>sales@yourdomainname.com.au</em>
+                    definitely looks professional than johnsmith1224@yahoo.com or sallykim1990@gmail.com.
                     Many internet companies out there, provide decent email services at reasonable prices. Also, there is free email account service for starters.</p>
                 <div class="form-group">
                     <label class="control-label col-sm-8" for="want-email-acc">Do you need a professional email account?</label>
@@ -264,12 +264,13 @@
                 <div class="form-group">
                     <label class="control-label col-sm-8" for="website-template">What kinds of website templates do you want?</label>
                     <div class="col-sm-4">
-                        <select id="websit-template">
+                        <select id="website-template" disabled>
                             <option>--Select--</option>
                             <option class="free-one-page-template">I want a free one-page template.</option>
                             <option class="free-multi-page-template">I want a free multi-page template.</option>
                             <option class="premium-website-template">I want a premium website template.</option>
                         </select>
+                        <p><strong>* Business type is not given.</strong></p>
                     </div>
                 </div>
             </div><br><br>
@@ -396,6 +397,10 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+    });
+    $("#business-type").on('change', function() {
+        $("#website-template").removeAttr("disabled");
+        $("#website-template").siblings().remove("p");
     });
     // Scrolls to the selected menu item on the page
     $(function() {
