@@ -161,13 +161,13 @@
                     <label class="control-label col-sm-8" for="have-logo">Do you have an existing logo to use on your new website?</label>
                     <div class="col-sm-4">
                         <select id="have-logo">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I have a Logo.</option>
-                            <option class="no">No, I don't have one.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-placeholder.html">Yes, I have a Logo.</option>
+                            <option value="help-get-logo.html">No, I don't have one.</option>
                         </select>
                     </div>
+                    <div class="col-sm-12"></div>
                 </div>
-                <!-- Visit https://www.freelogoservices.com/ -->
             </div><br><br>
             <!-- /.row -->
         </div>
@@ -190,33 +190,23 @@
                     <label class="control-label col-sm-8" for="want-new-domain">Do you have an existing domain name for the new website?</label>
                     <div class="col-sm-4">
                         <select id="want-new-domain">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I have a domain name for the new website.</option>
-                            <option class="no">No, I don't have one.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-placeholder.html">Yes, I have a domain name already.</option>
+                            <option value="help-get-domain.html">No, I don't have one.</option>
                         </select>
                     </div>
-                    <!-- Visit https://au.godaddy.com/ -->
+                    <div class="col-sm-12"></div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-8" for="want-au-domain">Do you want to have an Australian domain name such as <em>.com.au</em>?</label>
                     <div class="col-sm-4">
                         <select id="want-au-domain">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I want an AU domain name.</option>
-                            <option class="no">No, I don't want it.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-register-company.html">Yes, I want an AU domain name.</option>
+                            <option value="help-placeholder.html">No, I don't want it.</option>
                         </select>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-8" for="have-abn">Do you have an ABN(Australian Business Number) or ACN(Australian Company Number)?</label>
-                    <div class="col-sm-4">
-                        <select id="have-abn">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I have an ABN.</option>
-                            <option class="no">No, I don't have it.</option>
-                        </select>
-                    </div>
-                    <!-- Visit https://abr.gov.au/ and Register your ABN -->
+                    <div class="col-sm-12"></div>
                 </div>
             </div><br><br>
             <!-- /.row -->
@@ -238,13 +228,13 @@
                     <label class="control-label col-sm-8" for="want-email-acc">Do you need a professional email account?</label>
                     <div class="col-sm-4">
                         <select id="want-email-acc">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I need one.</option>
-                            <option class="no">No, I don't need it.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-email-options.html">Yes, I need one.</option>
+                            <option value="help-placeholder.html">No, I don't need it.</option>
                         </select>
                     </div>
+                    <div class="col-sm-12"></div>
                 </div>
-                <!-- https://www.zoho.com/mail/ -->
             </div><br><br>
             <!-- /.row -->
         </div>
@@ -265,13 +255,14 @@
                     <label class="control-label col-sm-8" for="website-template">What kinds of website templates do you want?</label>
                     <div class="col-sm-4">
                         <select id="website-template" disabled>
-                            <option>--Select--</option>
-                            <option class="free-one-page-template">I want a free one-page template.</option>
-                            <option class="free-multi-page-template">I want a free multi-page template.</option>
-                            <option class="premium-website-template">I want a premium website template.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-website-template.html">I want a free one-page template.</option>
+                            <option value="help-website-template.html">I want a free multi-page template.</option>
+                            <option value="help-website-template.html">I want a premium website template.</option>
                         </select>
                         <p><strong>* Business type is not given.</strong></p>
                     </div>
+                    <div class="col-sm-12"></div>
                 </div>
             </div><br><br>
             <!-- /.row -->
@@ -313,11 +304,12 @@
                     <label class="control-label col-sm-8" for="want-seo">Do you want to let us provide basic SEO service?</label>
                     <div class="col-sm-4">
                         <select id="want-seo">
-                            <option>--Select--</option>
-                            <option class="yes">Yes, I want it.</option>
-                            <option class="no">No, I don't want it.</option>
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-seo-service.html">Yes, I want it.</option>
+                            <option value="help-placeholder.html">No, I don't want it.</option>
                         </select>
                     </div>
+                    <div class="col-sm-12"></div>
                 </div>
             </div><br><br>
             <!-- /.row -->
@@ -398,10 +390,6 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-    $("#business-type").on('change', function() {
-        $("#website-template").removeAttr("disabled");
-        $("#website-template").siblings().remove("p");
-    });
     // Scrolls to the selected menu item on the page
     $(function() {
         $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
@@ -441,6 +429,14 @@
                 });
             }
         }
+    });
+    $("#business-type").on('change', function() {
+        $("#website-template").removeAttr("disabled");
+        $("#website-template").siblings().remove("p");
+    });
+    $( "select" ).on('change', function() {
+        // Take value as HTML and load it
+        $(this).parent().siblings('div').load($(this).val());
     });
 
     </script>
