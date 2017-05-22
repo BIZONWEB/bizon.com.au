@@ -61,10 +61,13 @@
                 <a href="#keywords" onclick=$("#menu-close").click();><i class="fa fa-search"></i>&nbsp; Keywords</a>
             </li>
             <li>
+                <a href="#hosting" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; Hosting</a>
+            </li>
+            <li>
                 <a href="#seo" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; SEO</a>
             </li>
             <li>
-                <a href="#summary" onclick=$("#menu-close").click();><i class="fa fa-file-text"></i>&nbsp; Summary</a>
+                <a href="#get-a-quote" onclick=$("#menu-close").click();><i class="fa fa-file-text"></i>&nbsp; Get a Quote</a>
             </li>
         </ul>
     </nav>
@@ -260,7 +263,7 @@
                             <option value="help-website-template.html">I want a free multi-page template.</option>
                             <option value="help-website-template.html">I want a premium website template.</option>
                         </select>
-                        <p><strong>* Business type is not given.</strong></p>
+                        <p class="text-danger">* Business type is not given.<a href="#business"></a></p>
                     </div>
                     <div class="col-sm-12"></div>
                 </div>
@@ -290,8 +293,45 @@
         <!-- /.container -->
     </section>
 
+    <!-- Hosting -->
+    <section id="hosting" class="bg-info">
+        <div class="container">
+            <h1 class="main-blue-color text-center">Hosting</h1>
+            <!-- /header -->
+            <div class="row">
+                <p class="lead">When your website is ready, it needs to be hosted somewhere in the internet, so that people can browse it.
+                    After you put your website on a hosting service, your domain name can be linked to your website.
+                    Then your website is finally done. In other words, your website is published.</p>
+                <p class="lead">There are many website hosting companies and services you can choose from.
+                    When you google "web hosting" you can find many hosting companies such as HOSTPAPA, GoDaddy, or CrazyDomains.
+                    They are cheap and some of them bundle domain name, email, hosting and templates.
+                    They also provides content management console, so you can maintain your website yourself.
+                    In order to use one of these services however, you need to design a website yourself or ask website designer to build one for you.
+                    Also, you need to have enough knowledge to maintain your website on their system.
+                    Some of service such as Wix, Weebly provides DIY website, which allow you to save money by designing a website yourself.
+                    Another issue is the server location. Most of these services are located out side of Australia. That means your
+                    can be slow down a lot. Some servers are in Singarpore, US or Ireland. Sometimes they are 5 times slower than a servers in Australia.
+                    BizOn builds your website, hosts it and maintains it in a reasonable price. We host your website in Australian cloud server.
+                    </p>
+                <div class="form-group">
+                    <label class="control-label col-sm-8" for="want-hosting">Do you want to know why you should choose BizOn?</label>
+                    <div class="col-sm-4">
+                        <select id="want-hosting">
+                            <option value="help-placeholder.html">--Select--</option>
+                            <option value="help-website-hosting.html">Yes, please.</option>
+                            <option value="help-placeholder.html">No, thanks.</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12"></div>
+                </div>
+            </div><br><br>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
     <!-- SEO -->
-    <section id="seo" class="bg-info">
+    <section id="seo" class="bg-default">
         <div class="container">
             <h1 class="main-blue-color text-center">SEO</h1>
             <!-- /header -->
@@ -317,12 +357,12 @@
         <!-- /.container -->
     </section>
 
-    <!-- Email me the summary -->
-    <section id="summary" class="bg-default">
+    <!-- Get a Quote -->
+    <section id="get-a-quote" class="bg-default">
         <div class="container">
             <br><br>
             <div class="row text-center">
-                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#confirm-summary">Email me the summary</button>
+                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#confirm-summary">Get a Quote</button>
             </div>
             <!-- /.row -->
         </div>
@@ -436,7 +476,8 @@
     });
     $( "select" ).on('change', function() {
         // Take value as HTML and load it
-        $(this).parent().siblings('div').load($(this).val());
+        $placeholder = $(this).parent().siblings('div');
+        $placeholder.load($(this).val());
     });
 
     </script>
