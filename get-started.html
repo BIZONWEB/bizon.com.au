@@ -61,7 +61,7 @@
                 <a href="#keywords" onclick=$("#menu-close").click();><i class="fa fa-search"></i>&nbsp; Keywords</a>
             </li>
             <li>
-                <a href="#hosting" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; Hosting</a>
+                <a href="#hosting" onclick=$("#menu-close").click();><i class="fa fa-server"></i>&nbsp; Hosting</a>
             </li>
             <li>
                 <a href="#seo" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; SEO</a>
@@ -159,14 +159,14 @@
             <div class="row">
                 <p class="lead">Company logos are intended to be the "face" of a company: They are graphical displays of a company's
                     unique identity, and through colors and fonts and images they provide essential information about a company.
-                    If you do not have one, it is a right time to make one.</p>
+                    If you do not have one, it is a right time to make one. Because your logo will be used in many different places including your website.</p>
                 <div class="form-group">
-                    <label class="control-label col-sm-8" for="have-logo">Do you have an existing logo to use on your new website?</label>
+                    <label class="control-label col-sm-8" for="have-logo">Do you need to make a new logo for your business?</label>
                     <div class="col-sm-4">
                         <select id="have-logo">
                             <option value="help-placeholder.html">--Select--</option>
-                            <option value="help-placeholder.html">Yes, I have a Logo.</option>
-                            <option value="help-get-logo.html">No, I don't have one.</option>
+                            <option value="help-get-logo.html">Yes, I need to make a logo.</option>
+                            <option value="help-placeholder.html">No, I don't have to.</option>
                         </select>
                     </div>
                     <div class="col-sm-12"></div>
@@ -190,12 +190,12 @@
                     Domain name is a limited resource, so many domain names are already occupied by someone else. Therefore, you need to
                     carefully decide your domain name and search for the availability.</p>
                 <div class="form-group">
-                    <label class="control-label col-sm-8" for="want-new-domain">Do you have an existing domain name for the new website?</label>
+                    <label class="control-label col-sm-8" for="want-new-domain">Do you need a new domain name for your website?</label>
                     <div class="col-sm-4">
                         <select id="want-new-domain">
                             <option value="help-placeholder.html">--Select--</option>
-                            <option value="help-placeholder.html">Yes, I have a domain name already.</option>
-                            <option value="help-get-domain.html">No, I don't have one.</option>
+                            <option value="help-get-domain.html">Yes, I need a domain name.</option>
+                            <option value="help-placeholder.html">No, I already have one.</option>
                         </select>
                     </div>
                     <div class="col-sm-12"></div>
@@ -250,20 +250,21 @@
             <h1 class="main-blue-color text-center">Website template</h1>
             <!-- /header -->
             <div class="row">
-                <p class="lead">Building website from the scratch costs you a lot of money. An even basic website can easily go up to <em>$1500</em>.
+                <p class="lead">Building website from the scratch costs you a lot of money. Even a basic website can easily go up to <em>$1500</em>.
                     But if you want to build a professional website quickly and inexpensively, we recommend you to search for existing
-                    website templates. Most of them are beautiful, modern and responsible. Premium website templates cost you <em>$15</em> to <em>$70</em>
-                    while some of them are free. If you are willing to pay extra money, we can make a premium website for you at a reasonable price.</p>
+                    website templates. Most of them are beautiful, modern and responsible. Premium website templates only cost you <em>$15</em> to <em>$70</em>
+                    while some of them are free.</p>
                 <div class="form-group">
                     <label class="control-label col-sm-8" for="website-template">What kinds of website templates do you want?</label>
                     <div class="col-sm-4">
                         <select id="website-template" disabled>
                             <option value="help-placeholder.html">--Select--</option>
-                            <option value="help-website-template.html">I want a free one-page template.</option>
-                            <option value="help-website-template.html">I want a free multi-page template.</option>
-                            <option value="help-website-template.html">I want a premium website template.</option>
+                            <option value="help-template-free1.html">I want a free one-page template.</option>
+                            <option value="help-template-free2.html">I want a free multi-page template.</option>
+                            <option value="help-template-premium.html">I want a premium website template.</option>
+                            <option value="help-placeholder.html">I don't want to use template.</option>
                         </select>
-                        <p class="text-danger">* Business type is not given.<a href="#business"></a></p>
+                        <p class="text-danger">* Business type is not given.<a href="#business"><i class="fa fa-level-up"></i></a></p>
                     </div>
                     <div class="col-sm-12"></div>
                 </div>
@@ -308,11 +309,9 @@
                     They also provides content management console, so you can maintain your website yourself.
                     In order to use one of these services however, you need to design a website yourself or ask website designer to build one for you.
                     Also, you need to have enough knowledge to maintain your website on their system.
-                    Some of service such as Wix, Weebly provides DIY website, which allow you to save money by designing a website yourself.
-                    Another issue is the server location. Most of these services are located out side of Australia. That means your
-                    can be slow down a lot. Some servers are in Singarpore, US or Ireland. Sometimes they are 5 times slower than a servers in Australia.
-                    BizOn builds your website, hosts it and maintains it in a reasonable price. We host your website in Australian cloud server.
-                    </p>
+                    Some of service such as Wix, Weebly provides DIY website, which allow you to save money by designing a website yourself.</p>
+                <p class="lead">Another issue is the server location. Most of these services are located out side of Australia. That means your
+                    can be slow down a lot. Some servers are in Singarpore, US or Ireland. Sometimes they are 5 times slower than a servers in Australia.</p>
                 <div class="form-group">
                     <label class="control-label col-sm-8" for="want-hosting">Do you want to know why you should choose BizOn?</label>
                     <div class="col-sm-4">
@@ -478,6 +477,7 @@
         // Take value as HTML and load it
         $placeholder = $(this).parent().siblings('div');
         $placeholder.load($(this).val());
+        $(this).blur();
     });
 
     </script>
