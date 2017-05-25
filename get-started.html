@@ -61,13 +61,13 @@
                 <a href="#keywords" onclick=$("#menu-close").click();><i class="fa fa-search"></i>&nbsp; Keywords</a>
             </li>
             <li>
-                <a href="#hosting" onclick=$("#menu-close").click();><i class="fa fa-server"></i>&nbsp; Hosting</a>
+                <a href="#hosting" onclick=$("#menu-close").click();><i class="fa fa-server"></i>&nbsp; Web Hosting</a>
             </li>
             <li>
                 <a href="#seo" onclick=$("#menu-close").click();><i class="fa fa-bullhorn"></i>&nbsp; SEO</a>
             </li>
             <li>
-                <a href="#get-a-quote" onclick=$("#menu-close").click();><i class="fa fa-file-text"></i>&nbsp; Get a Quote</a>
+                <a href="#save-pdf" onclick=$("#menu-close").click();><i class="fa fa-file-text"></i>&nbsp; Save pdf</a>
             </li>
         </ul>
     </nav>
@@ -268,18 +268,18 @@
         <!-- /.container -->
     </section>
 
-    <!-- Hosting -->
+    <!-- Web Hosting -->
     <section id="hosting" class="bg-info">
         <div class="container">
-            <h1 class="main-blue-color text-center">Hosting</h1>
+            <h1 class="main-blue-color text-center">Web Hosting</h1>
             <!-- /header -->
             <div class="row">
                 <p class="lead">When your website is ready, it needs to be hosted somewhere on the internet, so that people can browse it.
                     After you put your website on a hosting service, your domain name can be linked to your website.
                     Then your website is finally done. In other words, your website is published.</p>
-                <p class="lead">There are many website hosting companies and services you can choose from.
-                    When you google "web hosting" you can find many hosting companies such as HOSTPAPA, GoDaddy, or CrazyDomains.
-                    They are cheap and some of them bundle domain name, email, hosting and templates.
+                <p class="lead">There are many web hosting companies and services you can choose from.
+                    When you google "web hosting" you can find many companies such as HOSTPAPA, GoDaddy, or CrazyDomains.
+                    They are cheap and some of them bundle domain name, email hosting.
                     They also provide content management console, so you can maintain your website yourself.
                     In order to use one of these services, however, you need to design a website yourself or ask website designer to build one for you.
                     Also, you need to have enough knowledge to maintain your website on their system.
@@ -330,47 +330,14 @@
         <!-- /.container -->
     </section>
 
-    <!-- Get a Quote -->
-    <section id="get-a-quote" class="bg-default">
-        <div class="container">
-            <br><br>
-            <div class="row text-center">
-                <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#confirm-summary">Get a Quote</button>
-            </div>
-            <!-- /.row -->
+    <!-- Save pdf -->
+    <section id="save-pdf" class="bg-default">
+        <div class="container row text-center">
+            <button type="button" class="btn btn-lg btn-primary">Save as a pdf</button>
         </div>
-        <!-- /.container -->
+        <!-- /.container /.row -->
     </section>
 
-    <!-- Modal -->
-    <div id="confirm-summary" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Email me the summary</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="email">Email Address : </label>
-                        <input type="email" class="form-control" placeholder="your-email@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="organiztion">Name or Organization : </label>
-                        <input type="text" class="form-control" placeholder="Your company name">
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> CC to <strong>support@bizon.com.au</strong></label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Confirm</button>
-                </div>
-            </div><!-- /modal-content -->
-        </div><!-- /modal-dialog -->
-    </div>
- 
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -480,6 +447,40 @@
         $(this).blur();
     });
 
+    $('#save-pdf button').on('click', function() {
+        $('#save-pdf div').removeClass('text-center');
+
+        // Firefox 1.0+
+        var isFirefox = typeof InstallTrigger !== 'undefined';
+
+        // Safari 3.0+ "[object HTMLElementConstructor]"
+        var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+        if (isSafari) {
+            $(this).parent().load('help-save-pdf-safari.html');
+            return;
+        }
+
+        // Internet Explorer 6-11
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        if (isIE) {
+            $(this).parent().load('help-save-pdf-msie.html');
+            return;
+        }
+
+        // Edge 20+
+        var isEdge = !isIE && !!window.StyleMedia;
+        if (isEdge) {
+            $(this).parent().load('help-save-pdf-msie.html');
+            return;
+        }
+
+        // Chrome 1+
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (isChrome) {
+            $(this).parent().load('help-save-pdf-chrome.html');
+            return;
+        }
+    });
     </script>
 
 </body>
