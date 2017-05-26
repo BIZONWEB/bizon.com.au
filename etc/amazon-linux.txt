@@ -1,0 +1,10 @@
+
+Prepare:
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
+[ec2-user ~]$ sudo yum update -y
+[ec2-user ~]$ sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
+[ec2-user ~]$ sudo service httpd start
+Starting httpd:                                            [  OK  ]
+[ec2-user ~]$ sudo chkconfig httpd on
+
+Website:
