@@ -1,0 +1,12 @@
+Terminal
+========
+$ cd /Users/minjames/Public/
+$ mkdir <domain-name>
+$ cd <domain-name>
+$ git init 
+$ cd /Library/WebServer/Documents/
+$ sudo ln -s /Users/minjames/Public/<domain-name> <domain-name>
+
+Browser
+=======
+localhost/<domain-name>

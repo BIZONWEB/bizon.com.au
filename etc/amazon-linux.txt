@@ -6,10 +6,6 @@ http://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-se
 http://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-iam-instance-profile.html
 - EC2 should start(or reboot) with Proper Role attached.
 
-On Github
-=========
-Add AppSpec File : http://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html
-
 EC2 Prepare - LAMP
 ==================
 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
@@ -31,14 +27,26 @@ http://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operatio
 [ec2-user@ip-172-31-3-77 ~]$ sudo service codedeploy-agent status
 The AWS CodeDeploy agent is running as PID 29187
 
-Git Prepare - AppSpec
-=====================
-http://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions.html
-
+On Github
+=========
+Add AppSpec File : http://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html
 
 AWS CodeDeploy Console
 ======================
 http://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-github.html
+
+Support new website
+===================
+1. Create github repository
+2. Add Appsepc to the repository - destination changed
+3. Login EC2
+4. Create dir /var/www/<new customer.com.au>
+5. Add VirtualHost on /etc/httpd/conf/httpd.conf
+6. Restart apache server
+   $ sudo service httpd restart
+7. Open CodeDeploy Console
+8. Create Application/Deployment Group
+9. Create Deployment
 
 
 Trouble shooting
