@@ -12,12 +12,6 @@ Domain Name
    then add New Record
    www.bizon.com.au  7200  A    111.67.16.87
 
-Website
-=======
-1. A short phrase in 3 words, which describe your website the best.
-2. Come up with some keywords that your potential customer may use on google search to reach you.
-   Check your keyword with http://keywordtool.io/ and https://trends.google.com/trends/ to aline your keword to search trends.
-.
 
 Email Account
 =============

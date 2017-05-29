@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /css/
+Disallow: /etc/
+Disallow: /font-awesome/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /js/
+Disallow: /appspec.yml
