@@ -1,16 +1,26 @@
 Customer todo list
 ==================
-1. Come up with relative and unique keyword which explains your websited
-2. Use the other keywords on your contents
+1. Come up with relative and unique keyword which explains your website
+2. Visit https://trends.google.com/trends/ and search your keyword
+Keyword: web hosting australia
+3. Compare with other keyword to find best option
+"web hosting service" is globally popular but "web hosting australa" is more popular in Australia.
+"web hosting australia" was 3 times more popular than "australian web hosting"
 
-Professional SEO
-================
-1. sitemap, robot.txt
-2. canonicaliztion - one version of page for search engine
-3. Put keywords on H1,..,H5 tags
+Basic SEO
+=========
+1. robots.txt
+2. meta tags (keywords, description)
+   http://www.wordstream.com/meta-tags
+2. sitemap
+   https://www.xml-sitemaps.com
+   https://www.google.com/webmasters/tools/dashboard
+3. Expose your keyword to the search engines (Put keywords on H1,..,H5 tags)
+4. Canonicaliztion - one version of page for search engine
+   https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps
 
-Tools for SEO
-=============
+Tools for Professional SEO
+==========================
 1. Google PageSpeed Insights
    https://developers.google.com/speed/pagespeed/insights/
 2. Moz Local Listing Score
@@ -22,6 +32,5 @@ Tools for SEO
 7. Copyscape www.copyscape.com
 8. Robot.txt http://www.yellowpipe.com/yis/tools/robots.txt/
 9. Report
-
 
 
