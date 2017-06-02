@@ -15,9 +15,8 @@ Basic SEO
 2. sitemap
    https://www.xml-sitemaps.com
    https://www.google.com/webmasters/tools/dashboard
-3. Expose your keyword to the search engines (Put keywords on H1,..,H5 tags)
-4. Canonicaliztion - one version of page for search engine
-   https://moz.com/blog/canonical-url-tag-the-most-important-advancement-in-seo-practices-since-sitemaps
+3. Expose your keyword to the search engines (description meta tag, URL)
+4. Put address on every footer
 
 Tools for Professional SEO
 ==========================
