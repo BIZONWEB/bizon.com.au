@@ -22,31 +22,33 @@ body {
     vertical-align: middle;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
+h1 {
     font-size: 8.0em;
     font-weight: 700;
 }
 
-.text-vertical-center h2 {
-    margin: 0;
-    padding: 0;
+h2 {
     font-size: 4.0em;
     font-weight: 700;
 }
 
-.text-vertical-center h3 {
-    margin: 0;
-    padding: 0;
+h3 {
     font-size: 3.0em;
     font-weight: 700;
 }
 
-.text-vertical-center h4 {
-    margin: 0;
-    padding: 0;
-    font-size: 2.3em;
+h4 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -219,6 +221,10 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    font-family: "Fjalla One","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.about p {
+    font-size: 1.5em;
 }
 
 /* Services */
@@ -316,6 +322,16 @@ hr.small {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* page-intro */
+
+.page-intro {
+    font-family: "Fjalla One","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.page-intro p {
+    padding: 0 10px 0 10px;
+    font-size: 1.5em;
 }
 
 /* Footer */
