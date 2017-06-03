@@ -82,9 +82,9 @@
         </div>
     </header>
 
-    <section class="page-intro">
-        <div class="row">
-            <div class="col-lg-12">
+    <section class="section-article">
+        <div class="container">
+            <div class="row">
                 <br/><br/><p>There are many things to consider when it comes to building the website for small business. Web hosting, domain name, keywords, you name it.<br/><br/>This page will give you a complete guide for you to build a website which suits for your business in your budget. While ticking the boxes below, you can easily find out what should you do next.</p><br/><br/>
             </div>
         </div>
@@ -459,8 +459,6 @@
     });
 
     $('#save-pdf button').on('click', function() {
-        $('#save-pdf div').removeClass('text-center');
-
         // Firefox 1.0+
         var isFirefox = typeof InstallTrigger !== 'undefined';
 
@@ -468,6 +466,7 @@
         var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
         if (isSafari) {
             $(this).parent().load('help-save-pdf-safari.html');
+            $('#save-pdf div').removeClass('text-center');
             return;
         }
 
@@ -475,6 +474,7 @@
         var isIE = /*@cc_on!@*/false || !!document.documentMode;
         if (isIE) {
             $(this).parent().load('help-save-pdf-msie.html');
+            $('#save-pdf div').removeClass('text-center');
             return;
         }
 
@@ -482,6 +482,7 @@
         var isEdge = !isIE && !!window.StyleMedia;
         if (isEdge) {
             $(this).parent().load('help-save-pdf-msie.html');
+            $('#save-pdf div').removeClass('text-center');
             return;
         }
 
@@ -489,8 +490,10 @@
         var isChrome = !!window.chrome && !!window.chrome.webstore;
         if (isChrome) {
             $(this).parent().load('help-save-pdf-chrome.html');
+            $('#save-pdf div').removeClass('text-center');
             return;
         }
+        alert("Unsupported Browser!");
     });
     </script>
 

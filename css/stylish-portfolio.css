@@ -242,7 +242,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 100%;
+    height: 386;
     color: #fff;
     text-shadow: 1px 1px #888;
     background: url(../img/callout.jpg) no-repeat center center scroll;
@@ -324,12 +324,12 @@ hr.small {
     height: 100%;
 }
 
-/* page-intro */
+/* section-article */
 
-.page-intro {
+.section-article {
     font-family: "Fjalla One","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.page-intro p {
+.section-article p {
     padding: 0 10px 0 10px;
     font-size: 1.5em;
 }
