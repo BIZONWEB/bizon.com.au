@@ -6,4 +6,5 @@ Disallow: /font-awesome/
 Disallow: /fonts/
 Disallow: /img/
 Disallow: /js/
+Disallow: /help-*
 Disallow: /appspec.yml

@@ -34,6 +34,9 @@ Add AppSpec File : http://docs.aws.amazon.com/codedeploy/latest/userguide/refere
 AWS CodeDeploy Console
 ======================
 http://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-github.html
+Create deployment
+  Repository Name : bizonweb/bizon.com.au
+  Commit ID : 5698291094ede7ba4c039f810beb4054237dc08b
 
 Support new website
 ===================
