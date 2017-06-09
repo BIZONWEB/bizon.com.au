@@ -13,23 +13,21 @@ Basic SEO
 2. meta tags (keywords, description)
    http://www.wordstream.com/meta-tags
 2. sitemap
+   Submit sitemap to google.
    https://www.xml-sitemaps.com
    https://www.google.com/webmasters/tools/dashboard
 3. Expose your keyword to the search engines (description meta tag, URL)
-4. Put address on every footer
+4. Put physical address on every footer
 
 Tools for Professional SEO
 ==========================
-1. Google PageSpeed Insights
-   https://developers.google.com/speed/pagespeed/insights/
-2. Moz Local Listing Score
-   https://moz.com/local/search
-3. Google Analytics
-4. QuickSprout Website Analyzer
-5. Browseo
-6. SEO SiteCheckup https://seositecheckup.com/
-7. Copyscape www.copyscape.com
-8. Robot.txt http://www.yellowpipe.com/yis/tools/robots.txt/
-9. Report
-
+1. Google Trend 
+  - Search keywords that people frequently search, and find nitche to make your website on the first search page
+2. Google Search Console
+   - Registering your website to Google Search Console. Improve your website to make it Google friendly.
+     Data Highlighter, HTML Improvements, (Structured Data, Rich snippets)
+   - If the customer has Google account, they also can get error reports.
+   - Setting > Google Analytic Property
+   - Report: Google Index > Index Status > Download chart data, Crawl State will be available after 90 days.
+3. Google Analytic
 
