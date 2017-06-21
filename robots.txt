@@ -1,8 +1,6 @@
 User-agent: *
 Disallow: /.git/
 Disallow: /etc/
-Disallow: /font-awesome/
 Disallow: /fonts/
-Disallow: /img/
 Disallow: /help-*
 Disallow: /appspec.yml
